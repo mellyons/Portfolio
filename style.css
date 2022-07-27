@@ -1,0 +1,157 @@
+body{
+  font-family: sans-serif;
+  font-size: 1.8rem; /* 18px */
+}
+
+#navbar {
+  position:fixed;
+  display:flex; 
+  justify-content: flex-end; /*this moved about, work, contact to      the right side of the screen*/
+  top:0;/*This is set to always be at the top of viewport*/
+  padding: 2px;
+  width: 100%;
+  background-color:#A52A2A;
+  /*add box-shadow??? and z-index*/
+}
+
+.nav-list{
+  display:flex; /*this made about, work, contact be put on the         same line*/
+  margin-right: 2rem;/*this moved about, work, contact 2 rem from     the right side of the screen*/
+}
+
+/* add a hover like this to .nav-list a:hover {
+  background: var(--main-blue);
+}*/
+.nav-list > li{
+  margin:6px;/*this add spacing between the links*/
+}
+
+ #welcome-section {
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items:center; /*this centers the words */
+  height: 100vh;/*putting vh sets the same height as the viewport*/
+  width: 100%;
+  background-color:#696969;
+}
+
+li {
+  list-style: none;
+}  
+ 
+a {
+  text-decoration: none;
+  color: white;/*this make all links the color white*/
+}
+
+h1, h2{
+  color:white;
+  text-align: center;
+}
+
+h3{
+  color:white;
+  text-decoration:underline;
+  text-align:center;
+}
+
+img {
+  display: block;
+  background-color:white;
+}
+
+#projects{
+  background-color:#5F9EA0;
+  padding: 5rem 2rem;
+  width: 100%;
+}
+  
+.project-tile{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 4rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+
+.project-image{
+  height: calc(100% - 6.8rem);
+  width: 100%;
+  object-fit: cover;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;/*this centered the boxes*/
+  height:80%;
+  width: 80%;
+}
+
+/*this is for project 1 and project 4 */
+.column{
+  display: flex;
+  flex-direction: column;
+  height:40%;
+  width:90%;
+  padding:2rem;
+  text-align:center;
+  border-style:solid;
+  margin-bottom:10px;/*this puts spacing at the bottom of the box*/
+}
+
+.title{
+  border-style:solid;
+  padding: 1rem 0.5rem;
+  background-color:#A52A2A;
+}
+
+.contact{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  background-color:#696969;
+  width:100%;
+  padding:0 2rem;
+}
+
+#mediaList{
+  display:flex;
+  flex-wrap:wrap;
+}
+
+#mediaList > li{
+  margin:6px;/*this adds space between each item*/
+}
+
+footer{
+  background-color:#696969;
+  display:flex;
+  justify-content: space-evenly;
+  border-top:4px solid red;
+  width:100%;
+  padding:1rem;
+}
+
+@media (max-width: 28.75em) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .col {
+    display: block;
+    width: 100%;
+  }
+}
+
+@media (max-width: 30.625em) {
+  .projects {
+    padding: 6rem 1rem;
+  }
